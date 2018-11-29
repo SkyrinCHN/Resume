@@ -1,0 +1,18 @@
+.row div a{
+  font-size: 16px;
+  color: #8c8c8c;
+}
+.row div a:hover{
+  color: #191919;
+  box-shadow: #191919;
+ 
+}
+.row{
+  margin-top: 20px;
+}
+.email{
+  margin-bottom: 3px;
+}
+.right-nav nav li  .active{
+  color: #191919;
+}

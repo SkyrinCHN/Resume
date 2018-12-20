@@ -46,7 +46,7 @@
                 col-lg-6 col-md-12 col-sm-12 right-nav">
               <nav class="nav justify-content-center">
           <li class="nav-item d-flex d-inline">
-            <a class="nav-link active" href="https://github.com/SkyrinCHN">
+            <a class="nav-link active" href="https://github.com/SkyrinCHN" target="_blank">
               GitHub
             </a>
             <a class="nav-link " href="https://www.youtube.com">Youtube</a>
@@ -73,16 +73,16 @@
         <div id="top-nav" class="justify-content-end collapse  navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item active ">
-              <a class="nav-link" href="#">主页</a>
+              <a class="nav-link" href="javascript:;" data-rightnav="rightNav">主页</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="#">登录</a>
+              <a class="nav-link" href="javascript:;" data-rightnav="rightNav">登录</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">注册</a>
+              <a class="nav-link " href="javascript:;" data-rightnav="rightNav">注册</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="#">My way</a>
+              <a class="nav-link" href="javascript:;" data-rightnav="rightNav">My way</a>
             </li>
           </ul>
         </div>
@@ -140,12 +140,27 @@
     <!-- 工作经验抬头 -->
     <div class="experience-title">
       <h2>工作经历</h2>
-
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo repudiandae, architecto id quisquam,
         nulla odit eos blanditiis vitae voluptate at cumque nisi. Officiis natus aspernatur deleniti, saepe assumenda
         nobis!</p>
     </div>
+    <div id="experence" class="row">
+      <div class=" col-lg-6 col-md-6 " >
+        <h4>工作经历</h4>
+        <div class="item" class="workDiv">
+          <div  class="workEx">试验室副主任(2017-2018)</div>
+          <div class="fade in">
+            <font>试验室副主任(2017-2018)</font>
+            <h6>重庆江津区</h6>
+            <span>公司:重庆地盾搅拌站有限责任公司</span>
+          </div>
+        </div>
+      </div>
+      <div class=" col-lg-6 col-md-6 ">
+        <h4>生活经历</h4>
+      </div>
 
+    </div>
     <!-- 尾部 -->
     <div class="row">
       <div class="col-lg-5 col-md-12 col-sm-12">
@@ -160,18 +175,18 @@
       </div>
       <div class="col-lg-5 col-md-6 col-sm-6">
         <ul class=" list-unstyled footer-menu font-small nav flex-column">
-          <li class=" nav-item"><a class=" nav-link" href="#">185 8075 5520</a></li>
-          <li class=" nav-item"><a class=" nav-link" href="#">联系我</a></li>
-          <li class=" nav-item"><a class=" nav-link" href="#">关于我</a></li>
-          <li class=" nav-item"><a class=" nav-link" href="#">关于我</a></li>
+          <li class=" nav-item"><a class=" nav-link" href="javascript:;">185 8075 5520</a></li>
+          <li class=" nav-item"><a class=" nav-link" href="javascript:;">联系我</a></li>
+          <li class=" nav-item"><a class=" nav-link" href="javascript:;">关于我</a></li>
+          <li class=" nav-item"><a class=" nav-link" href="javascript:;">关于我</a></li>
         </ul>
       </div>
       <div class=" col-lg-2 col-md-6 col-sm-6">
         <ul class=" list-unstyled footer-menu font-small nav flex-column">
-          <li class=" nav-item"><a class=" nav-link" href="#">18580755520</a></li>
-          <li class=" nav-item"><a class=" nav-link" href="#">联系我</a></li>
-          <li class=" nav-item"><a class=" nav-link" href="#">关于我</a></li>
-          <li class=" nav-item"><a class=" nav-link" href="#">关于我</a></li>
+          <li class=" nav-item"><a class=" nav-link" href="javascript:;">18580755520</a></li>
+          <li class=" nav-item"><a class=" nav-link" href="javascript:;">联系我</a></li>
+          <li class=" nav-item"><a class=" nav-link" href="javascript:;">关于我</a></li>
+          <li class=" nav-item"><a class=" nav-link" href="javascript:;">关于我</a></li>
         </ul>
       </div>
     </div>
@@ -181,6 +196,16 @@
   </div>
   </div>
   </div>
+  <script>
+   $("[data-rightnav=rightNav]").mouseover(function(){
+    var $btn = $(this);
+    $btn.parent().addClass("active").siblings().removeClass("active");
+   })
+  $(".experience-title>h2").html("经历");
+
+ 
+  
+  </script>
 </body>
 
 </html>

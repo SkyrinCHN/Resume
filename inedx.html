@@ -9,6 +9,7 @@
   <script src="./js/jquery.min.js"></script>
   <script src="./js/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
+  <script src="js/echarts.min.js"></script>
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="/css/index.css">
@@ -23,7 +24,7 @@
   <!--author:LiuHai -->
   <!--github:https://github.com/SkyrinCHN-->
   <div class="container">
-    <!-- header -->
+    <!-- header  电话 邮箱-->
     <div class="row">
       <div class=" col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  ">
         <nav class="nav">
@@ -137,13 +138,14 @@
         <button class=" btn btn-outline-dark">关于我</button>
       </div>
     </div>
-    <!-- 工作经验抬头 -->
+    <!-- 经历抬头 -->
     <div class="experience-title">
-      <h2>工作经历</h2>
+      <h2></h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quo repudiandae, architecto id quisquam,
         nulla odit eos blanditiis vitae voluptate at cumque nisi. Officiis natus aspernatur deleniti, saepe assumenda
         nobis!</p>
     </div>
+    <!-- 工作和生活经历 -->
     <div id="experence" class="row">
        <div class=" col-lg-6 col-md-6 " >
         <h4>工作经历</h4>
@@ -231,6 +233,10 @@
       </div>
 
     </div>
+    <!-- 自我认识与技能说明 -->
+    <div id="skill" class="skill">
+      
+    </div>
     <!-- 尾部 -->
     <div class="row">
       <div class="col-lg-5 col-md-12 col-sm-12">
@@ -272,8 +278,7 @@
     $btn.parent().addClass("active").siblings().removeClass("active");
    })
   $(".experience-title>h2").html("经历");
-
- 
+  
   
   </script>
 </body>

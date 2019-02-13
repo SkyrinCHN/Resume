@@ -58,8 +58,11 @@ body a, body .btn, body button {
 }
 #top-nav>ul>li.active{
   border:1px solid #000;
-
 }
 .workEx{
   cursor: pointer;
+}
+.carousel-inner  div  p {
+  font-size: 2rem;
+  font-family: Zapfino;
 }
